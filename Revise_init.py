@@ -24,9 +24,7 @@ def OpenRevSheet(DB_type):
     m=1
     Table_Lenght=0
 
-    while master_sheet.cell(row=k, column=1).value!=None:
-        k=k+1
-        Table_Lenght=k
+    Table_Lenght = master_sheet.max_row
 
     for m in range(1, Table_Lenght):
         revision_sheet.cell(row=m, column=1).value=master_sheet.cell(row=m, column=1).value
