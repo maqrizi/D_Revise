@@ -39,7 +39,7 @@ ResultsFrame.pack(expand="yes", fill="both")
 
 ResultTree = ttk.Treeview(ResultsFrame)
 
-QAFrame_Title= tkinter.Label(QA_FRAME, text="Wiederholungsfragen", background="#6699ff", font=('Arial', 12,'bold'))
+QAFrame_Title= tkinter.Label(QA_FRAME, text="Revision Question", background="#6699ff", font=('Arial', 12,'bold'))
 QAFrame_Title.grid(row=1, column=0)
 
 LineCanvas = tkinter.Canvas(QA_FRAME, height=10, width=20, relief="flat", background="#6699ff", bd=0, highlightthickness=0)
