@@ -22,17 +22,17 @@ def OpenRevSheet(DB_type):
 
     k=1
     m=1
-    Table_Lenght=0
+    Table_Length=0
 
-    Table_Lenght = master_sheet.max_row
+    Table_Length = master_sheet.max_row
 
-    for m in range(1, Table_Lenght):
+    for m in range(1, Table_Length):
         revision_sheet.cell(row=m, column=1).value=master_sheet.cell(row=m, column=1).value
         revision_sheet.cell(row=m, column=2).value=master_sheet.cell(row=m, column=2).value
         
     revision_sheet.cell(row=1, column=3).value='User Answer'
     
-    return revision_sheet, revision_book, Table_Lenght
+    return revision_sheet, revision_book, Table_Length
 
    
 
